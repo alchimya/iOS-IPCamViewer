@@ -72,5 +72,5 @@ self.ipCamViewer1.ipCam=ipCam1;
 [self.ipCamViewer1 play];
 
 ```
-<br/>
+#Video stream example
 ![ScreenShot](https://raw.github.com/alchimya/iOS-IPCamViewer/master/screenshots/iOS-IPCamViewer.gif)
