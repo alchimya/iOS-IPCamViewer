@@ -6,6 +6,9 @@ With this small class set (two calsses) you can develop your custom ip cam surve
 <br/>
 To stream the remote images, you just need to configure some parameters of your IpCam...see instruction below.
 
+<br/>
+![ScreenShot](https://raw.github.com/alchimya/iOS-IPCamViewer/master/screenshots/screenshot_01.jpg)
+
 # How to use?
 This package consists of two classes:
 - L3SDKIPCam: it defines the ip camera parameters
