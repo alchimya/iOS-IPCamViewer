@@ -57,7 +57,7 @@ takePicture             | UIImage         | it allows to take a picture (image c
 @end
 ```
 
-<h5>examples</h5>
+<h5>example</h5>
 ```objectivec
  //sets remote ipcam params
 L3SDKIPCam*ipCam1=[[L3SDKIPCam alloc]init];
