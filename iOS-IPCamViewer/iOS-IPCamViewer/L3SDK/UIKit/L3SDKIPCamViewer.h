@@ -21,7 +21,7 @@
 
 
 @interface L3SDKIPCamViewer :UIImageView
-//configures ip cam parameters (see L3SDKIPCam.h)
+//it allows to configure ip cam parameters (see L3SDKIPCam.h)
 @property (nonatomic,strong)L3SDKIPCam*ipCam;
 //sets credetials behavior
 @property (nonatomic,assign)BOOL allowSelfSignedCertificates;
