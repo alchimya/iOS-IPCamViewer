@@ -34,3 +34,40 @@ ipCam                         | L3SDKIPCam                  | it allows to confi
 allowSelfSignedCertificates   | BOOL                        | it sets credetials behavior
 allowClearTextCredentials     | BOOL                        | it sets credetials behavior
 delegate                      | id                          | class delegate (see L3SDKIPCamViewerDelegate)
+
+<h5>methods</h5>
+  name                  |     type        |   description    
+--------------          | ----------------|-------------------------------------------------------------------
+play                    | void            | it allows to start, by a remote conenction, the ipcam streaming
+stop                    | void            | close connection and stop streaming
+pause                   | void            | it allows to take a picture (image cature) from the current streaming
+takePicture             | UIImage         | it allows to take a picture (image cature) from the current streaming
+
+<h5>protocols</h5>
+
+```objectivec
+@protocol L3SDKIPCamViewerDelegate <NSObject>
+//it will be raised when occur a connection error
+- (void)L3SDKIPCamViewer_ConnectionError:(NSError *)error;
+//it will be raised if ipcma requires authentication
+- (void)L3SDKIPCamViewer_AuthenticationRequired:(L3SDKIPCam*)ipCam sender:(L3SDKIPCamViewer*)sender;
+@end
+```
+
+<h5>examples</h5>
+```objectivec
+    //sets remote ipcam params
+    L3SDKIPCam*ipCam1=[[L3SDKIPCam alloc]init];
+    ipCam1.url=@"10.10.10.10";
+    ipCam1.port=8012;
+    ipCam1.videoFolder=@"axis-cgi/mjpg/";
+    ipCam1.videoName=@"video.cgi";
+    
+    //start streaming
+    self.ipCamViewer1.delegate=self;
+    self.ipCamViewer1.ipCam=ipCam1;
+    [self.ipCamViewer1 play];
+
+```
+<br/>
+![ScreenShot](https://raw.github.com/alchimya/iOS-IPCamViewer/master/screenshots/iOS-IPCamViewer.gif)
