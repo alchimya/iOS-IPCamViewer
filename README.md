@@ -59,17 +59,17 @@ takePicture             | UIImage         | it allows to take a picture (image c
 
 <h5>examples</h5>
 ```objectivec
-    //sets remote ipcam params
-    L3SDKIPCam*ipCam1=[[L3SDKIPCam alloc]init];
-    ipCam1.url=@"10.10.10.10";
-    ipCam1.port=8012;
-    ipCam1.videoFolder=@"axis-cgi/mjpg/";
-    ipCam1.videoName=@"video.cgi";
+ //sets remote ipcam params
+L3SDKIPCam*ipCam1=[[L3SDKIPCam alloc]init];
+ipCam1.url=@"10.10.10.10";
+ipCam1.port=8012;
+ipCam1.videoFolder=@"axis-cgi/mjpg/";
+ipCam1.videoName=@"video.cgi";
     
-    //start streaming
-    self.ipCamViewer1.delegate=self;
-    self.ipCamViewer1.ipCam=ipCam1;
-    [self.ipCamViewer1 play];
+//start streaming
+self.ipCamViewer1.delegate=self;
+self.ipCamViewer1.ipCam=ipCam1;
+[self.ipCamViewer1 play];
 
 ```
 <br/>
