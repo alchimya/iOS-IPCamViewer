@@ -11,8 +11,8 @@ To stream the remote images, you just need to configure some parameters of your 
 
 # How to use?
 This package consists of two classes:
-- L3SDKIPCam: it defines the ip camera parameters
-- L3SDKIPCamViewer: it allows to stream remote images taken from an IpCamera
+- <b>L3SDKIPCam</b>: it defines the ip camera parameters
+- <b>L3SDKIPCamViewer</b>: it allows to stream remote images taken from an IpCamera
 
 <b>L3SDKIPCam</b>
 <h5>properties</h5>
