@@ -2,7 +2,7 @@
 An IPCam Viewer  based on UIImageView subclass.
 
 # Do you have an IpCam?
-With this small class set (two calsses) you can build your custom ip cam surveillance app in a very EZWay!
+With this small class set (two classes) you can build your custom ip cam surveillance app in a very EZWay!
 <br/>
 To stream the remote images, you just need to configure some parameters of your IpCam...see instruction below.
 
