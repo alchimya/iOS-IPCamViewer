@@ -6,7 +6,7 @@ With this small class set (two classes) you can build your custom ip cam surveil
 <br/>
 To stream the remote images, you just need to configure some parameters of your IpCam...see instruction below.
 
-<br/>
+<br/> 
 ![ScreenShot](https://raw.github.com/alchimya/iOS-IPCamViewer/master/screenshots/screenshot_01.jpg)
 
 # How to use?
